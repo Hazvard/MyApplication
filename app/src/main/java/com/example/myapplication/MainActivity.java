@@ -12,8 +12,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.i("MainActivity", "onCreate: ");
 
         Button bonjour = findViewById(R.id.bonjour);
         Button photo = findViewById(R.id.photo);
@@ -30,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Toast.makeText(MainActivity.this, "Bienvenue", Toast.LENGTH_SHORT).show();
+
 
     }
 }
