@@ -8,6 +8,8 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -74,4 +76,27 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    public void demarerChrono(MenuItem v){
+        Intent intent = new Intent(MainActivity.this, ChronometreActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void quitter(MenuItem v){
+        System.exit(0);
+
+    }
+
+    public void suspendre(MenuItem v){
+        finish();
+    }
+
 }

@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">HazvardAPK</string>
+    <string name="chronom_tre" translatable="false">Chronomètre</string>
+    <string name="chronometre" translatable="false">Chronomètre</string>
+    <string name="tacheL" translatable="false">Tâche Longue</string>
+    <string name="photo">photo</string>
     <string name="bonjour">Bonjour</string>
-    <string name="photo">Photo</string>
-    <string name="chronom_tre">Chronomètre</string>
-    <string name="chronometre">Chronomètre</string>
+    <string name="exit" translatable="false">exit</string>
+    <string name="chrono" translatable="false">chrono</string>
+    <string name="pause" translatable="false">pause</string>
+    <string name="sortie" translatable="false">Sortie</string>
 </resources>

@@ -8,9 +8,18 @@
         tools:context=".MainActivity" android:backgroundTintMode="add"
         android:background="#BEC2BE">
     <Button
+            android:text="@string/tacheL"
+            android:layout_width="415dp"
+            android:layout_height="50dp" android:id="@+id/Tache_longue"
+            android:backgroundTint="#606668"
+            tools:ignore="TextContrastCheck"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/chrono"/>
+    <Button
             android:text="@string/chronometre"
             android:layout_width="415dp"
-            android:layout_height="78dp" android:id="@+id/chrono"
+            android:layout_height="50dp" android:id="@+id/chrono"
             android:backgroundTint="#606668"
             tools:ignore="TextContrastCheck"
             android:layout_marginTop="18dp"
@@ -19,23 +28,24 @@
     <Button
             android:text="@string/bonjour"
             android:layout_width="415dp"
-            android:layout_height="78dp" android:id="@+id/bonjour"
+            android:layout_height="50dp" android:id="@+id/bonjour"
             android:backgroundTint="#FC3022"
             tools:ignore="TextContrastCheck"
-            android:layout_marginBottom="18dp"
             app:layout_constraintBottom_toTopOf="@+id/photo" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"/>
 
     <Button
             android:text="@string/photo"
             android:layout_width="415dp"
-            android:layout_height="78dp" android:id="@+id/photo"
+            android:layout_height="50dp" android:id="@+id/photo"
             android:backgroundTint="#C91003"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="192dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="141dp" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="TextContrastCheck"/>
+            tools:ignore="TextContrastCheck"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/chrono" android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/bonjour" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="158dp" android:layout_marginEnd="158dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
     <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
                                                 android:id="@+id/guideline2" app:layout_constraintGuide_begin="20dp"
                                                 android:orientation="vertical"/>
