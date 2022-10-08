@@ -9,4 +9,5 @@
     <string name="chrono" translatable="false">chrono</string>
     <string name="pause" translatable="false">pause</string>
     <string name="sortie" translatable="false">Sortie</string>
+    <string name="calcul">Calcul</string>
 </resources>

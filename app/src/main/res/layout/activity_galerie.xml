@@ -5,6 +5,10 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".photo">
+        tools:context=".galerie">
 
+    <ImageView
+            android:layout_width="299dp"
+            android:layout_height="431dp" app:srcCompat="@drawable/ic_launcher_foreground"
+            android:id="@+id/imageView" tools:layout_editor_absoluteY="150dp" tools:layout_editor_absoluteX="56dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
