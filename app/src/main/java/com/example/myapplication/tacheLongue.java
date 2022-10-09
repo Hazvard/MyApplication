@@ -5,6 +5,7 @@ import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,28 +29,39 @@ public class tacheLongue extends AppCompatActivity {
         Button calcul = findViewById(R.id.chargement);
         bar = findViewById(R.id.progressBar);
         bar.setVisibility(View.INVISIBLE);
+        ImageView haz = findViewById(R.id.haz);
 
 
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                ProgressBar bar = findViewById(R.id.progressBar);
-                try {
-                    TimeUnit.SECONDS.sleep(1);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
 
-            }
-        };
+
 
         calcul.setOnClickListener(view -> {
             bar.setVisibility(View.VISIBLE);// Je n'arrive pas à la faire apparaitre puis disparaitre
 
             ExecutorService service = Executors.newSingleThreadExecutor();
-            service.execute(runnable);
-            Toast.makeText(tacheLongue.this, "Fini", Toast.LENGTH_SHORT).show();
-            runOnUiThread(runnable );
+            service.execute(new Runnable() {
+                @Override
+                public void run() {
+                    Log.i("thread tache longue", "début");
+
+                    try {
+                        Thread.sleep(10000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            bar.setVisibility(View.INVISIBLE);
+                            haz.setImageResource(R.drawable.sans_dan);
+                        }
+                    });
+                }
+            });
+
+
 
 
         });
