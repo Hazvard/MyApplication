@@ -9,7 +9,7 @@ import android.os.Bundle;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class galerie extends AppCompatActivity {
+public class Galerie extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

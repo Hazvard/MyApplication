@@ -1,21 +1,18 @@
 package com.example.myapplication;
 
-import android.content.Intent;
-import android.os.Build;
+import android.media.MediaPlayer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
-public class tacheLongue extends AppCompatActivity {
+public class TacheLongue extends AppCompatActivity {
 
     private ProgressBar bar;
 
@@ -30,6 +27,8 @@ public class tacheLongue extends AppCompatActivity {
         bar = findViewById(R.id.progressBar);
         bar.setVisibility(View.INVISIBLE);
         ImageView haz = findViewById(R.id.haz);
+
+        MediaPlayer son = MediaPlayer.create(this, R.raw.amongus);
 
 
 
@@ -54,6 +53,7 @@ public class tacheLongue extends AppCompatActivity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
+                            son.start();
                             bar.setVisibility(View.INVISIBLE);
                             haz.setImageResource(R.drawable.sans_dan);
                         }

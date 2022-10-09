@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         Button chrono = findViewById(R.id.chrono);
         Button tacheL = findViewById(R.id.tache_longue);
         Button galerie = findViewById(R.id.galerie);
+        Button meteo = findViewById(R.id.meteo);
 
 
         bonjour.setOnClickListener(view -> {
@@ -56,8 +57,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        meteo.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, MeteoActivity.class);
+            startActivity(intent);
+        });
+
+
         tacheL.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, tacheLongue.class);
+            Intent intent = new Intent(MainActivity.this, TacheLongue.class);
             startActivity(intent);
         });
 
@@ -104,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         galerie.setOnClickListener((view -> {
-            Intent intent = new Intent(MainActivity.this, galerie.class);
+            Intent intent = new Intent(MainActivity.this, Galerie.class);
             startActivity(intent);
         }));
 
