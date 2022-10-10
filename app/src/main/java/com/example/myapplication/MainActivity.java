@@ -46,7 +46,9 @@ public class MainActivity extends AppCompatActivity {
         Button tacheL = findViewById(R.id.tache_longue);
         Button galerie = findViewById(R.id.galerie);
         Button meteo = findViewById(R.id.meteo);
-        Button contacts = findViewById(R.id.contact);
+        Button contacts = findViewById(R.id.contact2);
+        Button capteurs = findViewById(R.id.Capteurs);
+        Button select = findViewById(R.id.image);
 
 
         bonjour.setOnClickListener(view -> {
@@ -60,6 +62,16 @@ public class MainActivity extends AppCompatActivity {
 
         contacts.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, Contacts.class);
+            startActivity(intent);
+        });
+
+        capteurs.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, Capteurs.class);
+            startActivity(intent);
+        });
+
+        select.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, SelectActivity.class);
             startActivity(intent);
         });
 

@@ -30,6 +30,12 @@
             android:theme="@style/Theme.MyApplication"
             tools:targetApi="31">
         <activity
+                android:name=".SelectActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".Capteurs"
+                android:exported="false"/>
+        <activity
                 android:name=".Contacts"
                 android:exported="false"/>
         <activity
