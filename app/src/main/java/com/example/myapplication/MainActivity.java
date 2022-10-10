@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Button tacheL = findViewById(R.id.tache_longue);
         Button galerie = findViewById(R.id.galerie);
         Button meteo = findViewById(R.id.meteo);
+        Button contacts = findViewById(R.id.contact);
 
 
         bonjour.setOnClickListener(view -> {
@@ -54,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
 
         chrono.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, ChronometreActivity.class);
+            startActivity(intent);
+        });
+
+        contacts.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, Contacts.class);
             startActivity(intent);
         });
 

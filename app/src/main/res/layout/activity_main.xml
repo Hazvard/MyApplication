@@ -13,7 +13,7 @@
             android:layout_height="50dp" android:id="@+id/contact"
             android:backgroundTint="#606668"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/meteo"/>
+            app:layout_constraintTop_toBottomOf="@+id/meteo" android:layout_marginTop="8dp"/>
     <Button
             android:text="@string/tacheL"
             android:layout_width="415dp"
