@@ -7,6 +7,27 @@
         android:layout_height="match_parent"
         tools:context=".MeteoActivity" android:background="#BEC2BE">
 
+    <TextView
+            android:layout_width="143dp"
+            android:layout_height="63dp" android:id="@+id/mintemperatureText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:fontFamily="monospace"
+            app:layout_constraintEnd_toStartOf="@+id/TemperatureText" android:layout_marginBottom="264dp"
+            android:textColor="#C91003"
+            app:layout_constraintBottom_toTopOf="@+id/position" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="117dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="343dp" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:layout_width="145dp"
+            android:layout_height="67dp" android:id="@+id/maxtemperatureText2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:fontFamily="monospace"
+            android:textColor="#C91003"
+            android:layout_marginBottom="264dp"
+            app:layout_constraintBottom_toTopOf="@+id/position"
+            app:layout_constraintStart_toEndOf="@+id/TemperatureText" android:layout_marginEnd="117dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="343dp" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0"/>
     <Button
             android:text="Position GPS"
             android:layout_width="181dp"
@@ -14,6 +35,26 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" android:backgroundTint="#C91003"
-            app:layout_constraintHorizontal_bias="0.541"
-    />
+            app:layout_constraintHorizontal_bias="0.491"
+            android:layout_marginBottom="4dp"/>
+    <TextView
+            android:layout_width="112dp"
+            android:layout_height="52dp" android:id="@+id/TemperatureText"
+            android:textColor="#C91003"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/position"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:fontFamily="monospace"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.48"/>
+    <TextView
+            android:text="Ville"
+            android:layout_width="307dp"
+            android:layout_height="152dp" android:id="@+id/ville"
+            android:gravity="center"
+            android:textSize="60dp"
+            android:textColor="#C91003"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/TemperatureText"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
