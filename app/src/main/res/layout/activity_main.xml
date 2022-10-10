@@ -8,6 +8,13 @@
         tools:context=".MainActivity" android:backgroundTintMode="add"
         android:background="#BEC2BE">
     <Button
+            android:text="contacts"
+            android:layout_width="415dp"
+            android:layout_height="50dp" android:id="@+id/contact"
+            android:backgroundTint="#606668"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meteo"/>
+    <Button
             android:text="@string/tacheL"
             android:layout_width="415dp"
             android:layout_height="50dp" android:id="@+id/tache_longue"
